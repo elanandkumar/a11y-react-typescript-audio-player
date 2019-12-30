@@ -1,0 +1,134 @@
+/*------------------------------------*\ #Audio Player \*------------------------------------*/
+.u-bg {
+  position: relative;
+  display: block;
+  background-image: none !important;
+  width: auto;
+  height: auto;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c-audio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: #ccc;
+  border-radius: 0.25em;
+  padding: 0 1em 0 0;
+}
+.c-audio .l-play {
+  position: relative;
+  justify-content: center;
+  appearance: none;
+  width: 12%;
+  min-width: 40px;
+  height: 40px;
+  border: 0;
+  background: #ccc;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 0;
+}
+.c-audio .l-play:focus {
+  outline: none;
+  box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+}
+.c-audio .l-play__play,
+.c-audio .l-play__pause {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c-audio .l-play__play {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g id="playbtn"><g transform="translate(-670.000000, -353.000000)"><path id="play_btn" style="fill:%23FFFFFF;" d="M740.3,403.5l-31.7-20.8v41.6L740.3,403.5z"/></g></g></svg>');
+}
+.c-audio .l-play__pause {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g id="pause"><g transform="translate(-968.000000, -353.000000)"><path id="pause_btn" style="fill:%23FFFFFF;" d="M1003.6,382.7v41.6h7.9v-41.6H1003.6z M1025.4,382.7v41.6h7.9v-41.6H1025.4z"/></g></g></svg>');
+}
+.c-audio__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 88%;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.c-audio__slider:focus {
+  outline: none;
+  box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+}
+.c-audio__length {
+  position: relative;
+  width: 100%;
+  height: 0.4em;
+  border-radius: 0.5em;
+  background: rgba(19, 19, 19, 0.3);
+  overflow: hidden;
+}
+.c-audio__bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.4em;
+  border-radius: 0.5em;
+  border: 0;
+  appearance: none;
+  transition: none;
+  overflow: hidden;
+  fill: white;
+  stroke: none;
+}
+.c-audio__bar:focus {
+  outline: 1;
+  box-shadow: 13px 12px 12px -4px rgba(19, 19, 19, 0.5);
+}
+
+.c-audio__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 88%;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.c-audio__slider:focus {
+  outline: none;
+  box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+}
+.c-audio__length {
+  position: relative;
+  width: 100%;
+  height: 0.4em;
+  border-radius: 0.5em;
+  background: rgba(19, 19, 19, 0.3);
+  overflow: hidden;
+}
+.c-audio__bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.4em;
+  border-radius: 0.5em;
+  border: 0;
+  appearance: none;
+  transition: none;
+  overflow: hidden;
+  fill: white;
+  stroke: none;
+}
+.c-audio__bar:focus {
+  outline: 1;
+  box-shadow: 13px 12px 12px -4px rgba(19, 19, 19, 0.5);
+}
+

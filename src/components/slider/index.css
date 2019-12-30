@@ -1,0 +1,41 @@
+.c-audio__slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 88%;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .c-audio__slider:focus {
+    outline: none;
+    box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+  }
+  .c-audio__length {
+    position: relative;
+    width: 100%;
+    height: 0.4em;
+    border-radius: 0.5em;
+    background: rgba(19, 19, 19, 0.3);
+    overflow: hidden;
+  }
+  .c-audio__bar {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.4em;
+    border-radius: 0.5em;
+    border: 0;
+    appearance: none;
+    transition: none;
+    overflow: hidden;
+    fill: white;
+    stroke: none;
+  }
+  .c-audio__bar:focus {
+    outline: 1;
+    box-shadow: 13px 12px 12px -4px rgba(19, 19, 19, 0.5);
+  }
+  
